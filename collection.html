@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Cars</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .popular-cars {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .popular-cars h1 {
+            font-size: 3em;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+            color: #ff6a00;
+        }
+
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .car-item {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .car-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .car-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: opacity 0.3s ease;
+        }
+
+        .car-item:hover img {
+            opacity: 0.9;
+        }
+
+        .car-item h2 {
+            margin: 15px 0;
+            font-size: 1.4em;
+        }
+
+        .car-item p {
+            margin-bottom: 20px;
+            font-size: 0.95em;
+            color: #ccc;
+        }
+
+        .car-item button {
+            padding: 12px 30px;
+            font-size: 1.1em;
+            background-color: #ff6a00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(255, 106, 0, 0.3);
+        }
+
+        .car-item button:hover {
+            background-color: #e55d00;
+            box-shadow: 0 6px 15px rgba(255, 106, 0, 0.4);
+        }
+
+        /* Style the anchor link */
+        .car-item button a {
+            color: white; /* Change the link color to white */
+            text-decoration: none; /* Remove underline from the link */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .popular-cars h1 {
+                font-size: 2.5em;
+            }
+
+            .car-item h2 {
+                font-size: 1.2em;
+            }
+
+            .car-item p {
+                font-size: 0.9em;
+            }
+
+            .car-item button {
+                padding: 10px 25px;
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .popular-cars h1 {
+                font-size: 2em;
+            }
+
+            .car-item h2 {
+                font-size: 1.1em;
+            }
+
+            .car-item p {
+                font-size: 0.85em;
+            }
+
+            .car-item button {
+                padding: 8px 20px;
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="popular-cars">
+        <h1>POPULAR CARS</h1>
+        <div class="car-grid">
+            <div class="car-item">
+                <img src="3.png" alt="BMW M5 2022">
+                <h2>BMW M5 2022</h2>
+                <p>Year - 2021 | KMS - 29000 | Fuel Type - Petrol</p>
+                <button><a href="try.html">Add to Cart</a></button>
+            </div>
+            <div class="car-item">
+                <img src="4.png" alt="SRT D370">
+                <h2>SRT D370</h2>
+                <p>Year - 2020 | KMS - 25800 | Fuel Type - Petrol</p>
+                <button><a href="try.html">Add to Cart</a></button>
+            </div>
+            <div class="car-item">
+                <img src="5.png" alt="Mec G63 AMG">
+                <h2>Mec G63 AMG</h2>
+                <p>Year - 2021 | KMS - 20600 | Fuel Type - Petrol</p>
+                <button><a href="try.html">Add to Cart</a></button>
+            </div>
+            <div class="car-item">
+                <img src="6.png" alt="Nessan GTR 644">
+                <h2>Nessan GTR 644</h2>
+                <p>Year - 2019 | KMS - 39600 | Fuel Type - Diesel</p>
+                <button><a href="try.html">Add to Cart</a></button>
+            </div>
+            <!-- More cars -->
+            <div class="car-item">
+                <img src="7.png" alt="2021 Audi A6">
+                <h2>2021 AUDI A6</h2>
+                <p>Year - 2021 | KMS - 15000 | Fuel Type - Petrol</p>
+                <button><a href="try.html">Add to Cart</a></button>
+            </div>
+            <div class="car-item">
+                <img src="8.png" alt="2022 Tesla Model 3">
+                <h2>2022 TESLA MODEL 3</h2>
+                <p>Year - 2022 | KMS - 5000 | Fuel Type - Electric</p>
+                <button><a href="try.html">Add to Cart</a></button>
+            </div>
+            <div class="car-item">
+                <img src="9.png" alt="2020 Porsche Cayenne">
+                <h2>2020 PORSCHE CAYENNE</h2>
+                <p>Year - 2020 | KMS - 18000 | Fuel Type - Petrol</p>
+                <button><a href="try.html">Add to Cart</a></button>
+            </div>
+            <div class="car-item">
+                <img src="10.png" alt="2019 Range Rover Sport">
+                <h2>2019 RANGE ROVER SPORT</h2>
+                <p>Year - 2019 | KMS - 25000 | Fuel Type - Diesel</p>
+                <button><a href="try.html">Add to Cart</a></button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
